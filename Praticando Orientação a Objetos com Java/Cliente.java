@@ -3,12 +3,10 @@ package poo_model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cliente {
+public class Cliente extends Pessoa {
 
-	// Propriedades da classe Cliente:
-	private Integer codigo;
-	private String nome;
-	private String cpf;
+	// Propriedades da classe Cliente
+	private String NumCartao;
 
 	// Associação: relacionamento estrutural que especifica objetos de uma classe
 	// conectados a objetos de outra classe:
@@ -34,29 +32,14 @@ public class Cliente {
 		}
 		return enderecos;
 	}
-
-	public Integer getCodigo() {
-		return codigo;
-	}
-	public void setCodigo(Integer codigo) {
-		this.codigo = codigo;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getCpf() {
-		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-
 	public void setEnderecos(List<Endereço> enderecos) {
 		this.enderecos = enderecos;
+	}
+
+	public String getNumCartao() {
+		return NumCartao;
+	}
+	public void setNumCartao(String numCartao) {
+		NumCartao = numCartao;
 	}
 }
